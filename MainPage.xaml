@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Title="Test">
+    <AbsoluteLayout>
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
+                             AbsoluteLayout.LayoutFlags="All">
+            <TableView Intent="Data"
+                       HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection Title="Javítás">
+                        <ViewCell>
+                            <VerticalStackLayout>
+                                <Label Text="Munka leírása"
+                                           Padding="15,2,15,0"/>
+                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                                           Padding="15,3,15,5"/>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <VerticalStackLayout>
+                                <Label Text="Munkaidő"
+                                               Padding="15,2,15,0"/>
+                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                                               Padding="15,3,15,5"/>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <VerticalStackLayout>
+                                <Label Text="Anyag"
+                                               Padding="15,2,15,0"/>
+                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                                               Padding="15,3,15,5"/>
+                            </VerticalStackLayout>
+                        </ViewCell>
+                        <SwitchCell Text="Hiba elhárítása sikeresen megtörtént"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </VerticalStackLayout>
+        <ImageButton BackgroundColor="Red"
+                         CornerRadius="35"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"  
+                         AbsoluteLayout.LayoutBounds=".95,.95,70,70"
+                         Aspect="Center">
+            <ImageButton.Source>
+                <FontImageSource FontFamily="fa-solid"
+                                     Glyph="&#xf3c1;"/>
+            </ImageButton.Source>
+        </ImageButton>
+        <ImageButton BackgroundColor="{StaticResource Primary}"
+                         CornerRadius="35"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"  
+                         AbsoluteLayout.LayoutBounds=".95,.95,70,70"
+                         Aspect="Center">
+            <ImageButton.Source>
+                <FontImageSource FontFamily="fa-solid"
+                                     Glyph="&#xf02f;"/>
+            </ImageButton.Source>
+        </ImageButton>
+    </AbsoluteLayout>
+</ContentPage>
